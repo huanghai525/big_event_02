@@ -1,0 +1,67 @@
+/* 底部文字居中 */
+.layui-footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/* 字体图标 */
+.iconfont {
+    margin-right: 8px;
+}
+
+.layui-icon {
+    margin-right: 8px;
+    margin-left: 20px;
+}
+
+/* 内容主体区域 */
+.layui-body {
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* 阻止A标签的过度 */
+
+a {
+    transition: none !important;
+}
+
+/* 头像区 */
+.userinfo {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 12px;
+    /* css控制页面文字不能被选中user-select:none;
+ */
+    user-select: none;
+}
+
+.layui-side-scroll .userinfo {
+    border-bottom: 1px solid #000;
+}
+
+.layui-nav-img {
+    width: 40px;
+    height: 40px;
+}
+
+.text-avatar {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #009688;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    /* 文字对齐方式 */
+    vertical-align: middle;
+    margin-right: 10px;
+}
