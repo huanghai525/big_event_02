@@ -32,7 +32,7 @@ function getUserInof() {
             // 判断返回值 不等于0就是失败
             if (res.status != 0) return layui.layer.msg(res.message, { icon: 5 })
             // 调用渲染头像函数
-            renderAvatar(res);
+            renderAvatar(res.data);
         }
     })
 }
@@ -40,6 +40,7 @@ function getUserInof() {
 function renderAvatar(user) {
     // 1.渲染名称（nickname优先，username其次）
     let name = user.nickname || user.username;
+    $('#welcome').html('欢迎&nbsp&nbsp' + name)
     // 2.渲染头像 (判断有没有头像)
     if (user.user_pic !== null) {
         // 有头像
